@@ -26,6 +26,12 @@ router.get('/training', function(req, res, body){
 	res.render('training');
 })
 
+router.get('/routes/butler-trail', function(req, res, body){
+	res.render('butler');
+})
+
+
+
 
 
 module.exports = router;
