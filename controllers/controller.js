@@ -10,4 +10,22 @@ router.get('/', function(req, res, body){
 	res.render('index');
 })
 
+router.get('/routes', function(req, res, body){
+	res.render('routes');
+})
+
+router.get('/races', function(req, res, body){
+	res.render('races');
+})
+
+router.get('/community', function(req, res, body){
+	res.render('community');
+})
+
+router.get('/training', function(req, res, body){
+	res.render('training');
+})
+
+
+
 module.exports = router;
