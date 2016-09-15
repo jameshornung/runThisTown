@@ -7,6 +7,10 @@ var methodOverride = require('method-override');
 var Sequelize = require('sequelize');
 
 router.get('/', function(req, res, body){
+	res.redirect('/home');
+})
+
+router.get('/home', function(req, res, body){
 	res.render('index');
 })
 

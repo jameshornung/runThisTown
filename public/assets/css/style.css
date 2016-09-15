@@ -45,6 +45,25 @@ MAIN PAGE
 }
 
 /*+++++++++++++
+ROUTES
++++++++++++++*/
+#routeImageHolder{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+
+#routeImage{
+	width: 100%;
+	border: 1px solid black;
+}
+
+.routeNavDropdowns{
+	
+}
+
+/*+++++++++++++
 FOOTER
 +++++++++++++*/
 footer{
