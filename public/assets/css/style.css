@@ -3,45 +3,41 @@ JUMBOTRON
 +++++++++++++*/
 .jumbotron{
 	width: 100%;
-	height: 200px;
+	height: 125px;
 	margin-top: 0px;
+
 }
 
-.searchBar{
-	width: 25%;
+
+/*+++++++++++++
+NAVBAR
++++++++++++++*/
+nav{
+	margin-top: 1px;
+	
 }
+
 
 /*+++++++++++++
 MAIN PAGE
 +++++++++++++*/
-.contentContainer{
-	margin-top: 10px;
-
-}
-
-.navigationContainer{
-
-}
-
-.navList{
-	margin-top: 0px;
+.nav-wrapper{
+	padding-right: 15px;
+	padding-left: 30px;
 }
 
 .navLinks{
-	border: 1px solid grey;
-	line-height: 50px;
-	padding-left: 15px;
-	background-color: blue;
-	color: white;
+	font-family: 'Baloo Bhaina', roboto;
+	font-size: 20px;
 }
 
-.navLinks:hover{
-	background-color: red;
+.button-collapse{
+	color: red;
 }
 
 .mainContent{
 	height: 600px;
-	background-color: yellow;
+	
 }
 
 /*+++++++++++++
@@ -51,7 +47,7 @@ ROUTES
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 15px;
+	margin-top: 75px;
 }
 
 #routeImage{
@@ -59,8 +55,10 @@ ROUTES
 	border: 1px solid black;
 }
 
-.routeNavDropdowns{
-	
+#routeDescription{
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*+++++++++++++

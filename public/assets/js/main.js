@@ -4,5 +4,7 @@ $(document).ready(function(){
 	
 	$('#fullLoop').click(function(){
 		$('#routeImage').attr("src", butlerLoop.image);
+		$('#routeTitle').text(butlerLoop.title);
+		$('#routeDescription').html(butlerLoop.description);
 	})
 })
