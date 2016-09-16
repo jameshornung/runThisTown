@@ -4,7 +4,7 @@ var router = express.Router();
 var request = require('request');
 var methodOverride = require('method-override');
 
-var Sequelize = require('sequelize');
+
 
 router.get('/', function(req, res, body){
 	res.redirect('/home');
