@@ -34,7 +34,7 @@ db.once('open', function(){
 	console.log('Mongoose Connection Successful!');
 });
 
-var User = require('./models/User.js')
+// var User = require('./models/User.js')
 
 // Passport Configuration====================================
 passport.use(new Strategy(
