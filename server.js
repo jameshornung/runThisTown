@@ -20,8 +20,7 @@ var routes = require('./controllers/controller.js');
 app.use('/', routes);
 
 //Database Configuration==================================
-// mongoose.connect('mongodb://heroku_gxr6jph9:2ne0iec1qd3onfiileab4neiv2@ds033046.mlab.com:33046/heroku_gxr6jph9');
-mongoose.connect('mongodb://localhost/runatxdb')
+mongoose.connect('mongodb://heroku_gxr6jph9:2ne0iec1qd3onfiileab4neiv2@ds033046.mlab.com:33046/heroku_gxr6jph9');
 var db = mongoose.connection;
 
 //Log Mongoose Errors

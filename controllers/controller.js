@@ -34,6 +34,7 @@ passport.deserializeUser(function(id, cb) {
 // ROUTES====================================================
 router.get('/', function(req, res, body){
 	res.render('index', {user: req.user});
+  console.log('user = ', req.body.username)
 })
 
 router.get('/login', function(req, res, body){
@@ -41,10 +42,8 @@ router.get('/login', function(req, res, body){
 })
 
 router.post('/login', 
-  passport.authenticate('local', { failureRedirect: '/routes' }),
+  passport.authenticate('local', { failureRedirect: '/login' }),
   function(req, res) {
-    console.log('username', req.username);
-    console.log('password', req.password);
     res.redirect('/');
   })
 
@@ -88,6 +87,10 @@ router.get('/training', function(req, res, body){
 
 router.get('/routes/butler-trail', function(req, res, body){
 	res.render('butler');
+});
+
+router.get('/routes/butler-trail/eastside', function(req, res, body){
+  res.render('eastside');
 });
 
 
