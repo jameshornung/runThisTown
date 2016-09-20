@@ -13,6 +13,10 @@ app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(process.cwd() + '/public'));
+
+app.use(require('cookie-parser')());
+app.use(require('express-session')({ secret: 'keyboard cat', resave: false, saveUninitialized: false }));
+
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -33,12 +37,12 @@ db.once('open', function(){
 	console.log('Mongoose Connection Successful!');
 });
 
-// var User = require('./models/User.js')
+var User = require('./models/User.js')
 
 // Passport Configuration====================================
 passport.use(new Strategy(
   function(username, password, cb) {
-    db.models.user.findOne({username: username}, function(err, user) {
+    User.findOne({username: username}, function(err, user) {
       if (err) { return cb(err); }
       if (!user) { return cb(null, false); }
       if (user.password != password) { return cb(null, false); }
@@ -51,7 +55,8 @@ passport.serializeUser(function(user, cb) {
 });
 
 passport.deserializeUser(function(id, cb) {
-  db.users.findById(id, function (err, user) {
+  // console.log(db)
+  User.findById(id, function (err, user) {
     if (err) { return cb(err); }
     cb(null, user);
   });
