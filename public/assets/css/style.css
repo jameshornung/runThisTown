@@ -53,12 +53,15 @@ MAIN PAGE
 /*+++++++++++++
 ROUTES
 +++++++++++++*/
-#routeImageHolder{
-	width: 50%;
+.mainContent{
+	margin-top: 50px;
+}
+
+/*#routeImageHolder{
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 75px;
-}
+}*/
 
 #routeImage{
 	width: 100%;
@@ -66,11 +69,11 @@ ROUTES
 	max-height: 300px;
 }
 
-#routeDescription{
+/*#routeDescription{
 	width: 65%;
 	margin-left: auto;
 	margin-right: auto;
-}
+}*/
 
 #butlerDrop{
 	margin-top: 64px;
@@ -87,5 +90,8 @@ ROUTES
 FOOTER
 +++++++++++++*/
 footer{
-	height: 300px;
+	height: 400px;
+	background-image: url('../images/skylineOutline.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
 }

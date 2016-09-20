@@ -73,6 +73,7 @@ router.post('/register', function(req, res){
 
 router.get('/routes', function(req, res, body){
 	res.render('routes');
+  console.log(req.user);
 })
 
 router.get('/races', function(req, res, body){
