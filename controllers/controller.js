@@ -8,28 +8,6 @@ var Strategy = require('passport-local');
 
 var User = require('./../models/User.js');
 
-// // Passport Configuration====================================
-// passport.use(new Strategy(
-//   function(username, password, cb) {
-//     db.models.user.findOne({username: username}, function(err, user) {
-//       if (err) { return cb(err); }
-//       if (!user) { return cb(null, false); }
-//       if (user.password != password) { return cb(null, false); }
-//       return cb(null, user);
-//     });
-//   }));
-
-// passport.serializeUser(function(user, cb) {
-//   cb(null, user.id);
-// });
-
-// passport.deserializeUser(function(id, cb) {
-//   db.users.findById(id, function (err, user) {
-//     if (err) { return cb(err); }
-//     cb(null, user);
-//   });
-// });
-
 
 // ROUTES====================================================
 router.get('/', function(req, res, body){
@@ -87,15 +65,5 @@ router.get('/community', function(req, res, body){
 router.get('/training', function(req, res, body){
 	res.render('training');
 })
-
-router.get('/routes/butler-trail', function(req, res, body){
-	res.render('butler');
-});
-
-router.get('/routes/butler-trail/eastside', function(req, res, body){
-  res.render('eastside');
-});
-
-
 
 module.exports = router;
