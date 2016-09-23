@@ -87,6 +87,20 @@ ROUTES
 }
 
 /*+++++++++++++
+TRAINING
++++++++++++++*/
+#trainingBanner{
+	height: 200px;
+	background-color: orange;
+}
+
+#video{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*+++++++++++++
 FOOTER
 +++++++++++++*/
 footer{

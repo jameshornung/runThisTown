@@ -11,8 +11,9 @@ var User = require('./../models/User.js');
 
 // ROUTES====================================================
 router.get('/', function(req, res, body){
-	res.render('index', {user: req.user});
-  console.log('home page', req.user)
+  var user = req.user;
+	res.render('index', { user });
+  console.log('home page', user)
 })
 
 router.get('/login', function(req, res, body){
