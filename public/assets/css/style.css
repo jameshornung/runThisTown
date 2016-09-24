@@ -1,12 +1,7 @@
-/*+++++++++++++
-JUMBOTRON
-+++++++++++++*/
-.jumbotron{
+body, html{
+	height: 100%;
 	width: 100%;
-	height: 125px;
-	margin-top: 0px;
 }
-
 
 /*+++++++++++++
 NAVBAR
@@ -14,7 +9,6 @@ NAVBAR
 nav{
 	margin-top: 1px;
 }
-
 
 /*+++++++++++++
 MAIN PAGE
@@ -57,46 +51,50 @@ ROUTES
 	margin-top: 50px;
 }
 
-/*#routeImageHolder{
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-}*/
-
 #routeImage{
 	width: 100%;
 	border: 1px solid black;
 	max-height: 300px;
 }
 
-/*#routeDescription{
-	width: 65%;
-	margin-left: auto;
-	margin-right: auto;
-}*/
-
 #butlerDrop{
 	margin-top: 64px;
 	padding: 5px;
 }
 
-#eastsideRouteMainImage{
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 /*+++++++++++++
 TRAINING
 +++++++++++++*/
-#trainingBanner{
-	height: 200px;
-	background-color: orange;
+.banner{
+	height: 400px;
+	padding: 15px;
+	background-image: url('../images/jimmiesSkylineBanner2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 #video{
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.coachDiv{
+	
+}
+
+.youTubeOptions{
+	padding-left: 10px;
+}
+
+.youTubeVideoLink{
+	padding-left: 15px;
+	width: 50%;
+	border-radius: 2px;
+}
+
+.youTubeVideoLink:hover{
+	background-color: #eeeeee;
 }
 
 

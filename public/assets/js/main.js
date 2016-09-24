@@ -19,7 +19,7 @@ $(document).ready(function(){
 //=============
 //TRAINING
 //=============
-	var videos = ['https://www.youtube.com/embed/nuCL7Izfgtc', 'https://www.youtube.com/embed/gZW8TabLcSU']
+	var videos = ['https://www.youtube.com/embed/kie6ArWL8Ug', 'https://www.youtube.com/embed/gZW8TabLcSU', 'https://www.youtube.com/embed/nuCL7Izfgtc']
 
 	$('.youTubeVideo').click(function(){
 		var x = this.value;
