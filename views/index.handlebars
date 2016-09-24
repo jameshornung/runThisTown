@@ -20,10 +20,13 @@
 </nav>
 
 <div class="banner">
-  <div class="col s12">
-    <p class="right" id="login">Howdy, please <a href="/login">login</a> or <a href="/register">sign up</a></p>
+  <div class="col s12 loginDiv">
+    {{#if user}}
+      <p class="right" id="login">Howdy, {{user.username}}</p><a class="right" href="/logout">logout</a>
+    {{^}}
+      <p class="right" id="login">Howdy, please <a href="/login">login</a> or <a href="/register">sign up</a></p>
+    {{/if}}
   </div>
-  <h4>{{user.username}}</h4>
 </div>
 
 <!-- first row start -->
@@ -44,5 +47,8 @@
 	</div>
 </div>
 
+<script>
+
+</script>
 
 

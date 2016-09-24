@@ -50,6 +50,12 @@ router.post('/register', function(req, res){
   });
 })
 
+router.get('/logout',
+  function(req, res){
+    req.logout();
+    res.redirect('/');
+  });
+
 router.get('/routes', function(req, res, body){
 	res.render('routes');
   console.log(req.user);
