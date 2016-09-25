@@ -97,6 +97,17 @@ TRAINING
 	background-color: #eeeeee;
 }
 
+/*+++++++++++++
+COMMUNITY
++++++++++++++*/
+.day{
+	border: 1px solid black;
+	margin-left: 1px;
+	margin-right: 1px;
+	width: 14%;
+	float: left;
+	height: 150px;
+}
 
 /*+++++++++++++
 FOOTER
