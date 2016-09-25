@@ -22,7 +22,22 @@
 <div class="banner">
 </div>
 
+
+<!-- EVENT FORM+++++++++++++++++++++++++++++++ -->
+
 <div class="container">
+<div class="col s6">
+    <h4>Post Event</h4>
+    <form id="eventForm" action="/event" method="post">
+        <label class="col s3 offset3">Name of Event:</label>
+        <input type="text" name="event"/><br/>
+        <label>Date of Event:</label>
+        <input type="date" name="date"/>
+        <label>Description:</label>
+        <input type="text" name="description"/>
+        <input type="submit" value="Submit"/>
+    </form>
+</div>
 	
 </div>
 

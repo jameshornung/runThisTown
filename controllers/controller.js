@@ -7,6 +7,7 @@ var passport = require('passport');
 var Strategy = require('passport-local');
 
 var User = require('./../models/User.js');
+var Message = require('./../models/Message.js');
 
 
 // ROUTES====================================================
@@ -55,6 +56,19 @@ router.get('/logout',
     req.logout();
     res.redirect('/');
   });
+
+router.post('/event', function(req, res){
+  var newMessage = new Message({event: req.body.event, date: req.body.date, description: req.body.description, username: req.user.username});
+  console.log('new message ', newMessage)
+  newMessage.save(function(err, doc){
+    if(err){
+      console.log('save error', error)
+    }
+    else{
+      console.log('saved', doc)
+    }
+  })
+});
 
 router.get('/routes', function(req, res, body){
 	res.render('routes');
