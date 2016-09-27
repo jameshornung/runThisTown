@@ -23,33 +23,33 @@
 </div>
 
 
-<div class="container mainContent">
-  <div class="row">
+
+  <div class="row mainContent">
     <div class="day">
       <p class="center">Monday</p>
         <ul>
-         <li><a href="http://austinrunners.org/group-runs/#Monday" target="_blank">ARC Mon AM</a></li>
-         <li><a href="http://austinrunners.org/group-runs/#MondayPM" target="_blank">ARC Mon PM</a></li>
+         <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Monday" target="_blank">ARC Mon AM</a></li>
+         <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#MondayPM" target="_blank">ARC Mon PM</a></li>
         </ul>
     </div>
     <div class="day">
       <p class="center">Tuesday</p>
       <ul>
-        <li><a href="http://www.lukeslocker.com/Company/News/post.aspx?postID=337" target="_blank">Luke's Taco Run</a></li>
-        <li><a href="http://austinrunners.org/group-runs/#Tuesday" target="_blank">ARC Tue Track</a></li>
+        <li><a class="runGroupLink" href="http://www.lukeslocker.com/Company/News/post.aspx?postID=337" target="_blank">Luke's Taco Run</a></li>
+        <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Tuesday" target="_blank">ARC Tue Track</a></li>
       </ul>
     </div>
     <div class="day">
       <p class="center">Wednesday</p>
       <ul>
-        <li><a href="http://www.lukeslocker.com/Company/News/post.aspx?postID=338" target="_blank">Luke's Social Run</a></li>
+        <li><a class="runGroupLink" href="http://www.lukeslocker.com/Company/News/post.aspx?postID=338" target="_blank">Luke's Social Run</a></li>
       </ul>
     </div>
     <div class="day">
       <p class="center">Thursday</p>
       <ul>
-         <li><a href="http://austinrunners.org/group-runs/#Thursday" target="_blank">ARC Thur AM</a></li>
-         <li><a href="http://austinrunners.org/group-runs/#ThursdayPM" target="_blank">ARC Thur PM</a></li>
+         <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Thursday" target="_blank">ARC Thur AM</a></li>
+         <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#ThursdayPM" target="_blank">ARC Thur PM</a></li>
       </ul>
     </div>
     <div class="day">
@@ -58,8 +58,8 @@
     <div class="day">
       <p class="center">Saturday</p>
       <ul>
-         <li><a href="http://austinrunners.org/group-runs/#Saturday" target="_blank">Ship Of Fools</a></li>
-         <li><a href="http://austinrunners.org/group-runs/#Saturday" target="_blank">ARC NW</a></li>
+         <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Saturday" target="_blank">Ship Of Fools</a></li>
+         <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Saturday" target="_blank">ARC NW</a></li>
       </ul>
     </div>
     <div class="day">
@@ -68,10 +68,19 @@
   </div>
 
   <div class="row">
-    <div class="col s12">
-      
+  <h1>Community Bulletin Board</h1>
+    <div class="col s12" id="bulletinBoard">
+      {{#each messages }}
+        <div id="messageBoardPost">
+          <h5 class="messageBoardHeading">{{ this.event }}</h5>
+          <p class="messageBoardDescription">{{ this.description }}</p>
+          <p class="messageBoardDate">{{ this.date }}</p>
+          <p class="messageBoardName">Posted By: {{this.username}}</p>
+        </div>
+      {{/each}}
     </div>
   </div>
+
   <div class="row">
     <div class="col s6">
         <h4>Post Event</h4>
@@ -88,12 +97,14 @@
     <div class="col s6">
     </div>
 	</div>
-</div>
+
 
 <!-- FOOTER -->
 <div class="row">
-	<div class="col s12">
-		<footer class="">
-		</footer>
-	</div>
+  <div class="col s12">
+    <footer class="">
+    </footer>
+  </div>
 </div>
+
+

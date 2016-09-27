@@ -5,6 +5,8 @@ var request = require('request');
 var methodOverride = require('method-override');
 var passport = require('passport');
 var Strategy = require('passport-local');
+var mongoose = require('mongoose');
+var db = mongoose.connection;
 
 var User = require('./../models/User.js');
 var Message = require('./../models/Message.js');
@@ -67,6 +69,8 @@ router.post('/event', function(req, res){
     else{
       console.log('saved', doc)
     }
+    }).then(function(data){
+      res.redirect('/community')
   })
 });
 
@@ -80,7 +84,12 @@ router.get('/races', function(req, res, body){
 })
 
 router.get('/community', function(req, res, body){
-	res.render('community');
+  Message.find().then(function(data){
+    // console.log(data);
+    var messagesForBoard = {messages: data};
+    console.log(messagesForBoard)
+    res.render('community', messagesForBoard)
+  })
 })
 
 router.get('/training', function(req, res, body){

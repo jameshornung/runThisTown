@@ -1,6 +1,6 @@
 body, html{
-	height: 100%;
-	width: 100%;
+	
+	
 }
 
 /*+++++++++++++
@@ -28,7 +28,7 @@ MAIN PAGE
 }
 
 .mainContent{
-	height: 600px;
+	
 }
 
 #runMascot{
@@ -87,14 +87,30 @@ TRAINING
 	padding-left: 10px;
 }
 
-.youTubeVideoLink{
+.youTubeVideoGazellesLink{
 	padding-left: 15px;
 	width: 50%;
 	border-radius: 2px;
 }
 
-.youTubeVideoLink:hover{
+.youTubeVideoGazellesLink:hover{
 	background-color: #eeeeee;
+	cursor: pointer;
+}
+
+.youTubeVideoRunAtxLink{
+	padding-left: 15px;
+	width: 50%;
+	border-radius: 2px;
+}
+
+.youTubeVideoRunAtxLink:hover{
+	background-color: #eeeeee;
+	cursor: pointer;
+}
+
+.youTubeLinksHeaders{
+	padding-left: 15px;
 }
 
 /*+++++++++++++
@@ -107,6 +123,20 @@ COMMUNITY
 	width: 14%;
 	float: left;
 	height: 150px;
+}
+
+.runGroupLink{
+	padding-left: 5px;
+}
+
+#bulletinBoard{
+	height: 500px;
+	border: 1px solid black;
+}
+
+#messageBoardPost{
+	width: 33%;
+	float: left;
 }
 
 /*+++++++++++++

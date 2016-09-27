@@ -19,11 +19,30 @@ $(document).ready(function(){
 //=============
 //TRAINING
 //=============
-	var videos = ['https://www.youtube.com/embed/kie6ArWL8Ug', 'https://www.youtube.com/embed/gZW8TabLcSU', 'https://www.youtube.com/embed/nuCL7Izfgtc']
+	var gazelleVideos = [
+	'https://www.youtube.com/embed/kie6ArWL8Ug?controls=0', 
+	'https://www.youtube.com/embed/gZW8TabLcSU?controls=0', 
+	'https://www.youtube.com/embed/tY0S1y-HEZs?controls=0', 
+	'https://www.youtube.com/embed/chY5YBKipTQ?controls=0', 
+	'https://www.youtube.com/embed/7gE7N_PSjoI?controls=0', 
+	'https://www.youtube.com/embed/YjNAt708Ykc?controls=0', 
+	'https://www.youtube.com/embed/euN56EFx1XM?controls=0'
+	]
 
-	$('.youTubeVideo').click(function(){
+	var valeriesVideos =[
+	'https://www.youtube.com/embed/yn2AHHzW4ps?controls=0', 
+	'https://www.youtube.com/embed/sxuQJrhjbbU?controls=0', 
+	'https://www.youtube.com/embed/gbmk7mtLLuU?controls=0'
+	];
+
+	$('.youTubeVideoGazellesLink').click(function(){
 		var x = this.value;
-		$('#video').attr('src', videos[x])
+		$('#video').attr('src', gazelleVideos[x])
+	})
+
+	$('.youTubeVideoRunAtxLink').click(function(){
+		var x = this.value;
+		$('#video').attr('src', valeriesVideos[x])
 	})
 
 
