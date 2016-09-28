@@ -1,21 +1,15 @@
 body, html{
-	
-	
+	height: 100%;
+	width: 100%;
 }
 
 /*+++++++++++++
 NAVBAR
 +++++++++++++*/
-nav{
-	margin-top: 1px;
-}
-
-/*+++++++++++++
-MAIN PAGE
-+++++++++++++*/
-.nav-wrapper{
+.mainNavBar{
 	padding-right: 15px;
 	padding-left: 30px;
+	border-bottom: 8px solid #c6ff00;
 }
 
 .navLinks{
@@ -23,12 +17,21 @@ MAIN PAGE
 	font-size: 20px;
 }
 
+.navLinks:hover{
+	background-color: #212121;
+}
+
 .button-collapse{
 	color: red;
 }
 
+/*+++++++++++++
+MAIN PAGE
++++++++++++++*/
+
+
 .mainContent{
-	
+	margin-top: 50px;
 }
 
 #runMascot{
@@ -109,12 +112,12 @@ MAIN PAGE
 /*+++++++++++++
 ROUTES
 +++++++++++++*/
-.mainContent{
-	margin-top: 50px;
+#routeImageHolder{
+	text-align: center;
 }
 
 #routeImage{
-	width: 100%;
+	width: 70%;
 	border: 1px solid black;
 	max-height: 300px;
 }
@@ -123,6 +126,8 @@ ROUTES
 	margin-top: 64px;
 	padding: 5px;
 }
+
+
 
 /*+++++++++++++
 TRAINING
@@ -141,8 +146,15 @@ TRAINING
 	margin-right: auto;
 }
 
+.coachArea{
+	padding-left: 10px;
+	margin-top: 30px;
+}
+
 .coachDiv{
-	
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 315px;
 }
 
 .youTubeOptions{
@@ -151,23 +163,22 @@ TRAINING
 
 .youTubeVideoGazellesLink{
 	padding-left: 15px;
-	width: 50%;
 	border-radius: 2px;
+	color: white;
 }
 
 .youTubeVideoGazellesLink:hover{
-	background-color: #eeeeee;
+	color: #ff3d00;
 	cursor: pointer;
 }
 
 .youTubeVideoRunAtxLink{
 	padding-left: 15px;
-	width: 50%;
-	border-radius: 2px;
+	color: white;
 }
 
 .youTubeVideoRunAtxLink:hover{
-	background-color: #eeeeee;
+	color: #ff3d00;
 	cursor: pointer;
 }
 
@@ -206,7 +217,7 @@ FOOTER
 +++++++++++++*/
 footer{
 	height: 350px;
-	background-image: url('../images/footerSkyline3.jpg');
+	background-image: url('../images/footerSkyline5.jpg');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center bottom;
