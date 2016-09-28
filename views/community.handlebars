@@ -4,11 +4,11 @@
         <!-- <a href="#!" class="brand-logo  orange-text text-darken-4"></a> -->
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a class="white-text navLinks hoverable" href="/">Home</a></li>
-          <li><a class="white-text navLinks hoverable" href="/routes">Routes</a></li>
-          <li><a class="white-text navLinks hoverable" href="/training">Training</a></li>
-          <li><a class="white-text navLinks hoverable" href="/races">Races</a></li>
-          <li><a class="white-text navLinks hoverable" href="/community">Community</a></li>
+          <li><a class="white-text navLinks" href="/">Home</a></li>
+          <li><a class="white-text navLinks" href="/routes">Routes</a></li>
+          <li><a class="white-text navLinks" href="/training">Training</a></li>
+          <li><a class="white-text navLinks" href="/races">Races</a></li>
+          <li><a class="white-text navLinks" href="/community">Community</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <li><a href="/">Home</a></li>
@@ -21,97 +21,154 @@
   </nav>
 </div>
 
-<div class="row">
-  <div class="col s12 deep-orange accent-3 grey-text text-darken-4 seperator">
-    <h4>Weekly Events</h4>
+<!-- CAROUSEL ++++++++++++++++++++++++++++++++++++++++++++++-->
+<div class="row carouselHeadingDiv">
+  <div class="col s12 blue">
+    <h4 class="center carouselHeading">Weekly Events</h4>
   </div>
 </div>
 
-<div class="carousel carousel-slider center" data-indicators="true">
-    <!-- <div class="carousel-fixed-item center">
-      <a class="btn waves-effect white grey-text darken-text-2">button</a>
-    </div> -->
-    <div class="carousel-item red white-text" href="#one!">
+<div class="carousel carousel-slider center weeklyEvents" data-indicators="true">
+  <div class="carousel-fixed-item center carouselCaption">
+    <p class="center light">Austin has numerous running groups and there is something going on every day of the week, so get social, and get running!</p>
+  </div>
+  <div class="carousel-item blue white-text" href="#one!">
+    <div class="card-panel weekDay grey darken-4 z-depth-3">
       <h2>Monday</h2>
       <ul>
          <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Monday" target="_blank">ARC Mon AM</a></li>
          <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#MondayPM" target="_blank">ARC Mon PM</a></li>
       </ul>
     </div>
-    <div class="carousel-item amber white-text" href="#two!">
+  </div>
+  <div class="carousel-item blue white-text" href="#two!">
+    <div class="card-panel weekDay grey darken-4 z-depth-3">
       <h2>Tuesday</h2>
       <ul>
         <li><a class="runGroupLink" href="http://www.lukeslocker.com/Company/News/post.aspx?postID=337" target="_blank">Luke's Taco Run</a></li>
         <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Tuesday" target="_blank">ARC Tue Track</a></li>
       </ul>
     </div>
-    <div class="carousel-item green white-text" href="#three!">
-      <h2>Wednesday</h2>
-    </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <h2>Thursday</h2>
-    </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <h2>Friday</h2>
-    </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <h2>Saturday</h2>
-    </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <h2>Sunday</h2>
-    </div>
   </div>
-
-
-
-  <div class="row mainContent">
-    <div class="day">
-      <p class="center">Monday</p>
-        <ul>
-         <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Monday" target="_blank">ARC Mon AM</a></li>
-         <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#MondayPM" target="_blank">ARC Mon PM</a></li>
-        </ul>
-    </div>
-    <div class="day">
-      <p class="center">Tuesday</p>
-      <ul>
-        <li><a class="runGroupLink" href="http://www.lukeslocker.com/Company/News/post.aspx?postID=337" target="_blank">Luke's Taco Run</a></li>
-        <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Tuesday" target="_blank">ARC Tue Track</a></li>
-      </ul>
-    </div>
-    <div class="day">
-      <p class="center">Wednesday</p>
+  <div class="carousel-item blue white-text" href="#three!">
+    <div class="card-panel weekDay grey darken-4 z-depth-3">
+      <h2>Wednesday</h2>
       <ul>
         <li><a class="runGroupLink" href="http://www.lukeslocker.com/Company/News/post.aspx?postID=338" target="_blank">Luke's Social Run</a></li>
       </ul>
     </div>
-    <div class="day">
-      <p class="center">Thursday</p>
+  </div>
+  <div class="carousel-item blue white-text" href="#four!">
+    <div class="card-panel weekDay grey darken-4 z-depth-3">
+      <h2>Thursday</h2>
       <ul>
          <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Thursday" target="_blank">ARC Thur AM</a></li>
          <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#ThursdayPM" target="_blank">ARC Thur PM</a></li>
       </ul>
     </div>
-    <div class="day">
-      <p class="center">Friday</p>
+  </div>
+  <div class="carousel-item blue white-text" href="#five!">
+    <div class="card-panel weekDay grey darken-4 z-depth-3">
+      <h2>Friday</h2>
     </div>
-    <div class="day">
-      <p class="center">Saturday</p>
+  </div>
+  <div class="carousel-item blue white-text" href="#six!">
+    <div class="card-panel weekDay grey darken-4 z-depth-3">
+      <h2>Saturday</h2>
       <ul>
          <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Saturday" target="_blank">Ship Of Fools</a></li>
          <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Saturday" target="_blank">ARC NW</a></li>
       </ul>
     </div>
-    <div class="day">
-      <p class="center">Sunday</p>
+  </div>
+  <div class="carousel-item blue white-text" href="#seven!">
+    <div class="card-panel weekDay grey darken-4 z-depth-3">
+      <h2>Sunday</h2>
     </div>
   </div>
+</div>
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-  <div class="row">
-  <h1>Community Bulletin Board</h1>
+
+
+
+<!-- ALTERNATE CAROUSEL+++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<div class="row carouselHeadingDiv">
+  <div class="col s12">
+    <h4 class="center carouselHeading">Weekly Events</h4>
+  </div>
+</div>
+
+<div class="carousel carousel-slider center weeklyEvents black-text" data-indicators="true">
+  <div class="carousel-fixed-item center carouselCaption">
+    <p class="center light">Austin has numerous running groups and there is something going on every day of the week, so get social, and get running!</p>
+  </div>
+  <div class="carousel-item" href="#one!">
+    <div class="card-panel weekDay blue white-text z-depth-3">
+      <h2>Monday</h2>
+      <ul>
+         <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Monday" target="_blank">ARC Mon AM</a></li>
+         <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#MondayPM" target="_blank">ARC Mon PM</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="" href="#two!">
+    <div class="card-panel weekDay card-panel weekDay blue white-text z-depth-3 z-depth-3">
+      <h2>Tuesday</h2>
+      <ul>
+        <li><a class="runGroupLink" href="http://www.lukeslocker.com/Company/News/post.aspx?postID=337" target="_blank">Luke's Taco Run</a></li>
+        <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Tuesday" target="_blank">ARC Tue Track</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="carousel-item blue white-text" href="#three!">
+    <div class="card-panel weekDay grey darken-4 z-depth-3">
+      <h2>Wednesday</h2>
+      <ul>
+        <li><a class="runGroupLink" href="http://www.lukeslocker.com/Company/News/post.aspx?postID=338" target="_blank">Luke's Social Run</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="carousel-item blue white-text" href="#four!">
+    <div class="card-panel weekDay grey darken-4 z-depth-3">
+      <h2>Thursday</h2>
+      <ul>
+         <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Thursday" target="_blank">ARC Thur AM</a></li>
+         <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#ThursdayPM" target="_blank">ARC Thur PM</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="carousel-item blue white-text" href="#five!">
+    <div class="card-panel weekDay grey darken-4 z-depth-3">
+      <h2>Friday</h2>
+    </div>
+  </div>
+  <div class="carousel-item blue white-text" href="#six!">
+    <div class="card-panel weekDay grey darken-4 z-depth-3">
+      <h2>Saturday</h2>
+      <ul>
+         <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Saturday" target="_blank">Ship Of Fools</a></li>
+         <li><a class="runGroupLink" href="http://austinrunners.org/group-runs/#Saturday" target="_blank">ARC NW</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="carousel-item blue white-text" href="#seven!">
+    <div class="card-panel weekDay grey darken-4 z-depth-3">
+      <h2>Sunday</h2>
+    </div>
+  </div>
+</div>
+
+
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+  <div class="row orange">
+  <h1 class="center">Community Bulletin Board</h1>
     <div class="col s12" id="bulletinBoard">
       {{#each messages }}
-        <div id="messageBoardPost">
+        <div id="messageBoardPost" class="card-panel">
           <h5 class="messageBoardHeading">{{ this.event }}</h5>
           <p class="messageBoardDescription">{{ this.description }}</p>
           <p class="messageBoardDate">{{ this.date }}</p>
