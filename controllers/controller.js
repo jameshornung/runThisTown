@@ -26,7 +26,7 @@ router.get('/login', function(req, res, body){
 router.post('/login', 
   passport.authenticate('local', { failureRedirect: '/login' }),
   function(req, res) {
-    console.log('login page', req.user)
+    // console.log('login page', req.user)
     res.redirect('/');
   })
 
@@ -85,9 +85,10 @@ router.get('/races', function(req, res, body){
 
 router.get('/community', function(req, res, body){
   Message.find().then(function(data){
-    // console.log(data);
     var messagesForBoard = {messages: data};
     console.log(messagesForBoard)
+    var user = req.user;
+    console.log(user)
     res.render('community', messagesForBoard)
   })
 })

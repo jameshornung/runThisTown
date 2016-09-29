@@ -4,11 +4,11 @@
         <!-- <a href="#!" class="brand-logo  orange-text text-darken-4"></a> -->
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a class="white-text navLinks hoverable" href="/">Home</a></li>
-          <li><a class="white-text navLinks hoverable" href="/routes">Routes</a></li>
-          <li><a class="white-text navLinks hoverable" href="/training">Training</a></li>
-          <li><a class="white-text navLinks hoverable" href="/races">Races</a></li>
-          <li><a class="white-text navLinks hoverable" href="/community">Community</a></li>
+          <li><a class="white-text navLinks" href="/">Home</a></li>
+          <li><a class="white-text navLinks" href="/routes">Routes</a></li>
+          <li><a class="white-text navLinks" href="/training">Training</a></li>
+          <li><a class="white-text navLinks" href="/races">Races</a></li>
+          <li><a class="white-text navLinks" href="/community">Community</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <li><a href="/">Home</a></li>
@@ -21,7 +21,15 @@
   </nav>
 </div>
 <div class="banner">
-  <!-- <div class="row">
+  
+  <div class="row">
+    <header class="col s12">
+      <h1 class="center white-text title">Run This Town - ATX</h1>
+    </header>
+  </div>
+</div>
+
+<div class="row">
     <div class="col s12 loginDiv">
       {{#if user}}
         <p class="right" id="login">Howdy, {{user.username}}<a href="/logout"> logout</a></p>
@@ -29,12 +37,6 @@
         <p class="right" id="login">Howdy, please <a href="/login">login</a> or <a href="/register">sign up</a></p>
       {{/if}}
     </div>
-  </div> -->
-  <div class="row">
-    <header class="col s12">
-      <h1 class="center white-text title">Run This Town - ATX</h1>
-    </header>
-  </div>
 </div>
 
 <!-- first row start -->
@@ -61,17 +63,17 @@
 </div>
 </div>
 <!-- FOOTER -->
-<div class="row grey darken-4">
+<div class="row">
 	<footer class="">
     <div class="col s6">
       <ul class="footerNav">
-        <li class="listHeader white-text">A Heading for these links</li>
+        <li class="listHeader">A Heading for these links</li>
         <li></li>
-        <li><a href="/" class="white-text">Home</a></li>
-        <li><a href="/routes" class="white-text">Routes</a></li>
-        <li><a href="/training" class="white-text">Training</a></li>
-        <li><a href="/races" class="white-text">Races</a></li>
-        <li><a href="/community" class="white-text">Community</a></li>
+        <li><a href="/" class="">Home</a></li>
+        <li><a href="/routes" class="">Routes</a></li>
+        <li><a href="/training" class="">Training</a></li>
+        <li><a href="/races" class="">Races</a></li>
+        <li><a href="/community" class="">Community</a></li>
         <li></li>
       </ul>
     </div>

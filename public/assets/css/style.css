@@ -24,7 +24,14 @@ NAVBAR
 /*+++++++++++++
 MAIN PAGE
 +++++++++++++*/
-
+.banner{
+	height: 400px;
+	padding: 15px;
+	background-image: url('../images/jimmiesSkylineBanner2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 .mainContent{
 	margin-top: 50px;
@@ -121,20 +128,22 @@ ROUTES
 #butlerDrop{
 	margin-top: 64px;
 	padding: 5px;
+	width: 275px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
+
+
 
 
 
 /*+++++++++++++
 TRAINING
 +++++++++++++*/
-.banner{
-	height: 400px;
-	padding: 15px;
-	background-image: url('../images/jimmiesSkylineBanner2.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+
+
+.trainingHeading{
+	margin-top: 30px;
 }
 
 #video{
@@ -148,8 +157,8 @@ TRAINING
 }
 
 .coachDiv{
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 12px;
+	margin-right: 12px;
 	height: 315px;
 }
 
@@ -160,21 +169,21 @@ TRAINING
 .youTubeVideoGazellesLink{
 	padding-left: 15px;
 	border-radius: 2px;
-	color: white;
+	color: #76ff03;
 }
 
 .youTubeVideoGazellesLink:hover{
-	color: #ff3d00;
+	color: white;
 	cursor: pointer;
 }
 
 .youTubeVideoRunAtxLink{
 	padding-left: 15px;
-	color: white;
+	color: #76ff03;
 }
 
 .youTubeVideoRunAtxLink:hover{
-	color: #ff3d00;
+	color: white;
 	cursor: pointer;
 }
 
@@ -185,15 +194,6 @@ TRAINING
 /*+++++++++++++
 COMMUNITY
 +++++++++++++*/
-.day{
-	border: 1px solid black;
-	margin-left: 1px;
-	margin-right: 1px;
-	width: 14%;
-	float: left;
-	height: 150px;
-}
-
 .carouselHeadingDiv{
 	margin-bottom: 0px;
 }
@@ -210,13 +210,6 @@ COMMUNITY
 	color: white;
 }
 
-.carousel-indicators li {
-  color: black;
-}
-
-.carousel-indicators .active {
-  background-color: #444;
-}
 
 .weekDay{
 	margin-top: 30px;
@@ -227,13 +220,18 @@ COMMUNITY
 }
 
 #bulletinBoard{
-	height: 500px;
-	border: 1px solid black;
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 3px;
+	padding-top: 20px;
 }
 
 #messageBoardPost{
-	width: 33%;
+	width: 29%;
+	margin-left: 2%;
+	margin-right: 2%;
 	float: left;
+	height: 350px;
 }
 
 /*+++++++++++++
@@ -241,7 +239,7 @@ FOOTER
 +++++++++++++*/
 footer{
 	height: 350px;
-	background-image: url('../images/footerSkyline5.jpg');
+	background-image: url('../images/footerSkyline.jpg');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center bottom;
