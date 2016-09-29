@@ -19,6 +19,7 @@ router.get('/', function(req, res, body){
   console.log('home page', user)
 })
 
+
 router.get('/login', function(req, res, body){
 	res.render('login');
 })

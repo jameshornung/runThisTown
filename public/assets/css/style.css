@@ -22,6 +22,17 @@ NAVBAR
 }
 
 /*+++++++++++++
+Registration Modal
++++++++++++++*/
+.registrationForm{
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*+++++++++++++
 MAIN PAGE
 +++++++++++++*/
 .banner{
@@ -133,14 +144,9 @@ ROUTES
 	padding-right: 10px;
 }
 
-
-
-
-
 /*+++++++++++++
 TRAINING
 +++++++++++++*/
-
 
 .trainingHeading{
 	margin-top: 30px;

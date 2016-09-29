@@ -20,6 +20,7 @@
     </div>
   </nav>
 </div>
+
 <div class="banner">
   
   <div class="row">
@@ -34,9 +35,43 @@
       {{#if user}}
         <p class="right" id="login">Howdy, {{user.username}}<a href="/logout"> logout</a></p>
       {{^}}
-        <p class="right" id="login">Howdy, please <a href="/login">login</a> or <a href="/register">sign up</a></p>
+        <p class="right" id="login">Howdy, please <a class="modal-trigger" href="#modal1">sign in</a>
       {{/if}}
     </div>
+</div>
+
+<!-- Modal -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col l6 s12 registrationForm">
+        <h5>Returning User</h5>
+        <p>Sign in here</p>
+        <form action="/login" method="post">
+            <label class="">Username:</label>
+            <input type="text" name="username"/><br/>
+            <label>Password:</label>
+            <input type="password" name="password"/>
+            <input type="submit" value="Submit"/>
+        </form>
+      </div>
+      <div class="col l6 s12 registrationForm">
+        <h5>New User</h5>
+        <p>Register Here</p>
+        <form action="/register" method="post">
+            <label class="">Username:</label>
+            <input type="text" name="username"/><br/>
+            <label>Password:</label>
+            <input type="password" name="password"/>
+            <input type="submit" value="Submit"/>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal-footer">
+    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
 </div>
 
 <!-- first row start -->
@@ -83,5 +118,10 @@
 </div>
 
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
 
-
+</script>
