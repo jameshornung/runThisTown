@@ -232,6 +232,11 @@
 <script type="text/javascript">
   $(document).ready(function(){
       $('.carousel.carousel-slider').carousel({full_width: true});
+
+      // Automatically show todays events on page load
+      var date = new Date();
+      var day = date.getDay() - 1;
+      $('.carousel.carousel-slider').carousel('set', day);
     });
 </script>
 
