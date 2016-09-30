@@ -21,6 +21,12 @@ NAVBAR
 	color: red;
 }
 
+.loginText{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
 /*+++++++++++++
 Registration Modal
 +++++++++++++*/
@@ -45,7 +51,7 @@ MAIN PAGE
 }
 
 .mainContent{
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 #runMascot{
@@ -57,7 +63,7 @@ MAIN PAGE
 }
 
 .title{
-	text-shadow: 2px 2px black;
+	text-shadow: 2px 1px black;
 }
 
 
@@ -138,10 +144,18 @@ ROUTES
 
 #butlerDrop{
 	margin-top: 64px;
-	padding: 5px;
 	width: 275px;
-	padding-left: 10px;
-	padding-right: 10px;
+}
+
+.routeDropdownButton{
+	margin-left: 15px;
+	width: 250px;
+}
+
+.routeNavDropdowns{
+	padding-left: 7px;
+	padding-right: 7px;
+	line-height: 1.5em;
 }
 
 /*+++++++++++++

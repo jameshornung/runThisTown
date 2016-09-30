@@ -1,7 +1,13 @@
 <div class="navbar-fixed">
   <nav class="grey darken-4">
       <div class="nav-wrapper mainNavBar">
-        <!-- <a href="#!" class="brand-logo  orange-text text-darken-4"></a> -->
+        <div class="left hide-on-med-and-down">
+          {{#if user}}
+            <p class="loginText">Howdy, {{user.username}}<a href="/logout" class="grey-text"> logout</a></p>
+          {{^}}
+            <p class="loginText grey-text">Howdy, please <a class="modal-trigger" href="#modal1">sign in</a>
+          {{/if}}
+         </div>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a class="white-text navLinks" href="/">Home</a></li>
@@ -22,7 +28,6 @@
 </div>
 
 <div class="banner">
-  
   <div class="row">
     <header class="col s12">
       <h1 class="center white-text title">Run This Town - ATX</h1>
@@ -30,18 +35,8 @@
   </div>
 </div>
 
-<div class="row">
-    <div class="col s12 loginDiv">
-      {{#if user}}
-        <p class="right" id="login">Howdy, {{user.username}}<a href="/logout"> logout</a></p>
-      {{^}}
-        <p class="right" id="login">Howdy, please <a class="modal-trigger" href="#modal1">sign in</a>
-      {{/if}}
-    </div>
-</div>
-
 <!-- Modal -->
-<div id="modal1" class="modal">
+<div id="modal1" class="modal grey lighten-1">
   <div class="modal-content">
     <div class="row">
       <div class="col l6 s12 registrationForm">
@@ -69,8 +64,8 @@
     </div>
   </div>
   
-  <div class="modal-footer">
-    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+  <div class="modal-footer grey darken-4">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat grey-text text-darken-2">Close</a>
   </div>
 </div>
 
