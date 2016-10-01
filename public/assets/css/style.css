@@ -246,6 +246,12 @@ COMMUNITY
 	padding-top: 20px;
 }
 
+.messageBoard{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #messageBoardPost{
 	width: 29%;
 	margin-left: 2%;

@@ -131,11 +131,11 @@
 
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-<div class="container">
+<div class="messageBoard">
   <div class="row">
   <h1 class="center">Community Bulletin Board</h1>
     <div class="col s12" id="bulletinBoard">
-      {{#each messages }}
+      {{#each messagesForBoard }}
         <div id="messageBoardPost" class="card-panel blue">
           <h5 class="messageBoardHeading white-text">{{ this.event }}</h5>
           <p class="messageBoardDescription white-text">{{ this.description }}</p>
@@ -148,43 +148,25 @@
 </div>
 
 <!-- ++++++++ -->
-<!-- I would like for the input form to only be visible if a patient is signed in -->
+<!-- Post Message Form -->
 <!-- ++++++++ -->
-
-  <!-- <div class="row">
-    <div class="col s6">
-      {{#if user}}
-        <h4>Post Event</h4>
-        <form id="eventForm" action="/event" method="post">
-            <label class="col s3 offset3">Name of Event:</label>
-            <input type="text" name="event"/><br/>
-            <label>Date of Event:</label>
-            <input type="date" name="date"/>
-            <label>Description:</label>
-            <input type="text" name="description"/>
-            <input type="submit" value="Submit"/>
-        </form>
-        {{^}}
-          <p>You must <a href="/login">login</a> or <a href="/register">register</a> to post an event</p>
-      {{/if}}
-    </div>
-    <div class="col s6">
-    </div>
-	</div> -->
 
 <div class="row">
   <div class="col s6">
-    <h4>Post Event</h4>
-    <p class="red-text">You must be signed in to post an event</p>
-    <form id="eventForm" action="/event" method="post">
-        <label class="col s3 offset3">Name of Event:</label>
-        <input type="text" name="event"/><br/>
-        <label>Date of Event:</label>
-        <input type="date" name="date"/>
-        <label>Description:</label>
-        <input type="text" name="description"/>
-        <input type="submit" value="Submit"/>
-    </form>
+    {{#if user}}
+      <h4>Post Event</h4>
+      <form id="eventForm" action="/event" method="post">
+          <label class="col s3 offset3">Name of Event:</label>
+          <input type="text" name="event"/><br/>
+          <label>Date of Event:</label>
+          <input type="date" name="date"/>
+          <label>Description:</label>
+          <input type="text" name="description"/>
+          <input type="submit" value="Submit"/>
+      </form>
+      {{^}}
+        <p>Please <a class="modal-trigger" href="#modal1">login</a> to post on the message board</p>
+    {{/if}}
   </div>
   <div class="col s6">
   </div>

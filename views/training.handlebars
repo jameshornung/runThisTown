@@ -131,7 +131,7 @@ Training Plans
         </select>
       <label>Get Strong</label>
       </div>
-      <a id="workoutButton" class="waves-effect waves-light btn">button</a>
+      <button type="button" class="btn btn-primary workoutButton">submit</button>
     </form>
   </div>
   
@@ -148,6 +148,12 @@ Training Plans
     </div> 
   </footer>
 </div>
+
+<script type="text/javascript">
+  $('.workoutButton').click(function(){
+    console.log(value);
+  })
+</script>
 
 <script type="text/javascript">
   $(document).ready(function() {

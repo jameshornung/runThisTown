@@ -16,12 +16,6 @@ var Message = require('./../models/Message.js');
 router.get('/', function(req, res, body){
   var user = req.user;
 	res.render('index', { user });
-  console.log('home page', user)
-})
-
-
-router.get('/login', function(req, res, body){
-	res.render('login');
 })
 
 router.post('/login', 
@@ -29,11 +23,6 @@ router.post('/login',
   function(req, res) {
     // console.log('login page', req.user)
     res.redirect('/');
-  })
-
-router.get('/register', function(req, res, body){
-  res.render('register', {user: req.user});
-  console.log(req.user);
 })
 
 router.post('/register', function(req, res){
@@ -76,26 +65,29 @@ router.post('/event', function(req, res){
 });
 
 router.get('/routes', function(req, res, body){
-	res.render('routes');
-  console.log(req.user);
+  var user = req.user;
+	res.render('routes', {user});
 })
 
 router.get('/races', function(req, res, body){
-	res.render('races');
+  var user = req.user;
+	res.render('races', {user});
 })
 
 router.get('/community', function(req, res, body){
+  var user = req.user;
+  
   Message.find().then(function(data){
-    var messagesForBoard = {messages: data};
-    console.log(messagesForBoard)
-    var user = req.user;
-    console.log(user)
-    res.render('community', messagesForBoard)
+    var messagesForBoard = data;
+    console.log('messages', messagesForBoard);
+    res.render('community', {user, messagesForBoard});
   })
+
 })
 
 router.get('/training', function(req, res, body){
-	res.render('training');
+  var user = req.user;
+	res.render('training', {user});
 })
 
 module.exports = router;
