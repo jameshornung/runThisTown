@@ -1,14 +1,20 @@
 <div class="navbar-fixed">
   <nav class="grey darken-4">
       <div class="nav-wrapper mainNavBar">
-        <!-- <a href="#!" class="brand-logo  orange-text text-darken-4"></a> -->
+        <div class="left hide-on-med-and-down">
+          {{#if user}}
+            <p class="loginText">Howdy, {{user.username}}<a href="/logout" class="grey-text"> logout</a></p>
+          {{^}}
+            <p class="loginText grey-text">Howdy, please <a class="modal-trigger" href="#modal1">sign in</a>
+          {{/if}}
+         </div>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a class="white-text navLinks hoverable" href="/">Home</a></li>
-          <li><a class="white-text navLinks hoverable" href="/routes">Routes</a></li>
-          <li><a class="white-text navLinks hoverable" href="/training">Training</a></li>
-          <li><a class="white-text navLinks hoverable" href="/races">Races</a></li>
-          <li><a class="white-text navLinks hoverable" href="/community">Community</a></li>
+          <li><a class="white-text navLinks" href="/">Home</a></li>
+          <li><a class="white-text navLinks" href="/routes">Routes</a></li>
+          <li><a class="white-text navLinks" href="/training">Training</a></li>
+          <li><a class="white-text navLinks" href="/races">Races</a></li>
+          <li><a class="white-text navLinks" href="/community">Community</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <li><a href="/">Home</a></li>
@@ -19,6 +25,40 @@
         </ul>
     </div>
   </nav>
+</div>
+
+<!-- Modal -->
+<div id="modal1" class="modal grey lighten-1">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col l6 s12 registrationForm">
+        <h5>Returning User</h5>
+        <p>Sign in here</p>
+        <form action="/login" method="post">
+            <label class="">Username:</label>
+            <input type="text" name="username"/><br/>
+            <label>Password:</label>
+            <input type="password" name="password"/>
+            <input type="submit" value="Submit"/>
+        </form>
+      </div>
+      <div class="col l6 s12 registrationForm">
+        <h5>New User</h5>
+        <p>Register Here</p>
+        <form action="/register" method="post">
+            <label class="">Username:</label>
+            <input type="text" name="username"/><br/>
+            <label>Password:</label>
+            <input type="password" name="password"/>
+            <input type="submit" value="Submit"/>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal-footer grey darken-4">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat grey-text text-darken-2">Close</a>
+  </div>
 </div>
 
 <div class="row trainingHeading">
@@ -99,18 +139,20 @@ Training Plans
   </div>
 </div>
 
-
 <!-- FOOTER -->
 <div class="row">
-	<div class="col s12">
-		<footer class="">
-		</footer>
-	</div>
+  <footer class="">
+    <div class="col s6">
+    </div>
+    <div class="col s6">
+    </div> 
+  </footer>
 </div>
 
 <script type="text/javascript">
   $(document).ready(function() {
     $('select').material_select();
+    $('.modal-trigger').leanModal();
   });
 </script>
 

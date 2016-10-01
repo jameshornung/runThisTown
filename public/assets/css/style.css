@@ -266,10 +266,19 @@ footer{
 }
 
 .listHeader{
-	font-size: 20px;
+	font-size: 30px;
+	text-shadow: 1px 1px grey;
 }
 
 .footerNav{
-	margin-top: 75px;
-	margin-left: 25px;
+	margin-top: 195px;
+	margin-left: 120px;
+}
+
+.footerLinks{
+	color: black;
+}
+
+.footerLinks:hover{
+	color: green;
 }
