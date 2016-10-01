@@ -120,12 +120,12 @@ Training Plans
 </div>
 
 <div class="row">
-  <div class="col s3">
+  <!-- <div class="col s3">
     <form>
       <div class="input-field">
         <select>
           <option value="" disabled selected>Choose your option</option>
-          <option value="1">8 Minute Abs (If it aint broke...)</option>
+          <option id="sixPack">8 Minute Abs (If it aint broke...)</option>
           <option value="2"></option>
           <option value="3"></option>
         </select>
@@ -133,10 +133,24 @@ Training Plans
       </div>
       <button type="button" class="btn btn-primary workoutButton">submit</button>
     </form>
+  </div> -->
+
+  <div class="col s2">
+    <p id="sixPack">8 minute abs</p>
+    <p id="stop">stop</p>
+  </div>
+  <div class="col s2">
+    <div class="countdownTimer card-panel">
+      <p class="center">countdown</p>
+    </div>
+  </div>
+  <div class="col s8">
+      <div class="exerciseDiv card-panel">
+        <p class="center">Exercises Go Here</p>
+      </div>
+    </div>
   </div>
   
-  <div class="col s9">
-  </div>
 </div>
 
 <!-- FOOTER -->
@@ -150,9 +164,47 @@ Training Plans
 </div>
 
 <script type="text/javascript">
-  $('.workoutButton').click(function(){
-    console.log(value);
-  })
+
+
+$('#sixPack').click(function(){
+  var myTimer;
+  // var timer = 45;
+  var x = 0;
+  console.log('click');
+
+  // setTimeout(abs, 5000);
+
+  // function abs() {
+  //   var countdown = 45;
+  //   var showCountdown = setInterval(function(){
+  //     console.log(countdown)
+  //     countdown--;
+  //   });
+  //   x++;
+  //   console.log('x= ', x);
+  // }
+  testFunction();
+
+function testFunction(){
+  var timer = 45;
+  var startTimer = setInterval(function(){
+    console.log(timer);
+    $('.countdownTimer').html(timer)
+    timer--;
+
+    if(timer === 40){
+      clearInterval(startTimer);
+      x++;
+      console.log(x);
+        if(x<2){
+          testFunction();
+        }
+    }
+  }, 1000); 
+};
+});
+
+
 </script>
 
 <script type="text/javascript">

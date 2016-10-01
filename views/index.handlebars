@@ -48,6 +48,7 @@
             <label>Password:</label>
             <input type="password" name="password"/>
             <input type="submit" value="Submit"/>
+            <input type="hidden" value="{{window.location.href}}"" name="location">
         </form>
       </div>
       <div class="col l6 s12 registrationForm">
@@ -63,6 +64,7 @@
       </div>
     </div>
   </div>
+  
   
   <div class="modal-footer grey darken-4">
     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat grey-text text-darken-2">Close</a>
@@ -105,6 +107,7 @@
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
+    console.log(window)
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal-trigger').leanModal();
   });

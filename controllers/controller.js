@@ -15,13 +15,14 @@ var Message = require('./../models/Message.js');
 // ROUTES====================================================
 router.get('/', function(req, res, body){
   var user = req.user;
+  console.log('index', req.body);
 	res.render('index', { user });
 })
 
 router.post('/login', 
   passport.authenticate('local', { failureRedirect: '/login' }),
   function(req, res) {
-    // console.log('login page', req.user)
+    // console.log('login page', req.body);
     res.redirect('/');
 })
 
