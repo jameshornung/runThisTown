@@ -39,6 +39,7 @@
             <input type="text" name="username"/><br/>
             <label>Password:</label>
             <input type="password" name="password"/>
+            <input type="hidden" value="/routes" name="pathName">
             <input type="submit" value="Submit"/>
         </form>
       </div>
@@ -50,6 +51,7 @@
             <input type="text" name="username"/><br/>
             <label>Password:</label>
             <input type="password" name="password"/>
+            <input type="hidden" value="/routes" name="pathName">
             <input type="submit" value="Submit"/>
         </form>
       </div>
@@ -108,10 +110,8 @@
 
 <script type="text/javascript">
   $(document).ready(function(){
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.modal-trigger').leanModal();
+    
   });
-
 </script>
 
 

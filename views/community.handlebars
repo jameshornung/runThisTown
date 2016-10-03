@@ -39,7 +39,7 @@
             <input type="text" name="username"/><br/>
             <label>Password:</label>
             <input type="password" name="password"/>
-            <input type="hidden" value="window.location.href" name="location">
+            <input type="hidden" value="/community" name="pathName">
             <input type="submit" value="Submit"/>
 
         </form>
@@ -52,6 +52,7 @@
             <input type="text" name="username"/><br/>
             <label>Password:</label>
             <input type="password" name="password"/>
+            <input type="hidden" value="/community" name="pathName">
             <input type="submit" value="Submit"/>
         </form>
       </div>
@@ -187,7 +188,7 @@
 <script type="text/javascript">
   $(document).ready(function(){
     $('.carousel.carousel-slider').carousel({full_width: true});
-    $('.modal-trigger').leanModal();
+    
     // Automatically show todays events on page load
     var date = new Date();
     var day = date.getDay() - 1;

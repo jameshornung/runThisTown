@@ -15,18 +15,19 @@ var Message = require('./../models/Message.js');
 // ROUTES====================================================
 router.get('/', function(req, res, body){
   var user = req.user;
-  console.log('index', req.body);
+  // console.log('index', req.body);
 	res.render('index', { user });
 })
 
 router.post('/login', 
   passport.authenticate('local', { failureRedirect: '/login' }),
   function(req, res) {
-    // console.log('login page', req.body);
-    res.redirect('/');
+    var path = req.body.pathName;
+    res.redirect(path);
 })
 
 router.post('/register', function(req, res){
+  var path = req.body.pathName;
   var newUser = new User({ username: req.body.username, password: req.body.password });
   console.log('New User', newUser);
   newUser.save(function(err, doc) {
@@ -38,7 +39,7 @@ router.post('/register', function(req, res){
         if (err) {
           console.log('login error', err);
         }
-        return res.redirect('/');
+        return res.redirect(path);
       });
     }
   });

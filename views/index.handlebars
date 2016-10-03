@@ -47,8 +47,8 @@
             <input type="text" name="username"/><br/>
             <label>Password:</label>
             <input type="password" name="password"/>
+            <input type="hidden" value="/" name="pathName">
             <input type="submit" value="Submit"/>
-            <input type="hidden" value="{{window.location.href}}"" name="location">
         </form>
       </div>
       <div class="col l6 s12 registrationForm">
@@ -59,6 +59,7 @@
             <input type="text" name="username"/><br/>
             <label>Password:</label>
             <input type="password" name="password"/>
+            <input type="hidden" value="/" name="pathName">
             <input type="submit" value="Submit"/>
         </form>
       </div>
@@ -105,11 +106,9 @@
 </div>
 
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+
 <script type="text/javascript">
   $(document).ready(function(){
-    console.log(window)
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.modal-trigger').leanModal();
+    
   });
-
 </script>
