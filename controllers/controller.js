@@ -53,7 +53,7 @@ router.get('/logout',
 
 router.post('/event', function(req, res){
   var newMessage = new Message({event: req.body.event, date: req.body.date, description: req.body.description, username: req.user.username});
-  console.log('new message ', newMessage)
+  // console.log('new message ', newMessage)
   newMessage.save(function(err, doc){
     if(err){
       console.log('save error', error)
@@ -81,7 +81,7 @@ router.get('/community', function(req, res, body){
   
   Message.find().then(function(data){
     var messagesForBoard = data;
-    console.log('messages', messagesForBoard);
+    // console.log('messages', messagesForBoard);
     res.render('community', {user, messagesForBoard});
   })
 

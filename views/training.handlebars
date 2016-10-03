@@ -116,6 +116,16 @@ Training Plans
   </div>
 </div>
 
+<div class="row">
+  <div class="col s2">
+    <p id="intermediateHalf">Half Marathon Intermediate</p>
+  </div>
+  <div class="col s10 card-panel">
+    <h4 class="center planName"></h4>
+    <div id="showThePlan"></div>
+  </div>
+</div>
+
 <!-- +++++++++++++++++++++
 Workouts
 +++++++++++++++++++++ -->
@@ -158,9 +168,25 @@ Workouts
   </footer>
 </div>
 
+<script type="text/javascript" src="/assets/js/training.js"></script>
+
 <script type="text/javascript">
   $(document).ready(function(){
+    $('#intermediateHalf').click(function(e){
+      e.preventDefault();
+      console.log('clicked');
+      
+      $('.planName').text('12 Week Half Marathon (Intermediate)')
 
+      var table = $('<table class="trainingTable"><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>');
+
+      for(i=0; i<12; i++){
+        var row = $('<tr><td>' + halfIntermediate[i].week[0] + '</td><td>' + halfIntermediate[i].week[1] + '</td><td>' + halfIntermediate[i].week[2] + '</td><td>' + halfIntermediate[i].week[3] + '</td><td>' + halfIntermediate[i].week[4] + '</td><td>' + halfIntermediate[i].week[5] + '</td><td>' + halfIntermediate[i].week[6] + '</td></tr>');
+        table.append(row);
+      }
+
+      $('#showThePlan').append(table);
+    })
   });
 </script>
 
