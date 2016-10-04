@@ -1,4 +1,10 @@
 
+#map{
+	height: 100%;
+}
+
+
+
 /*+++++++++++++
 NAVBAR
 +++++++++++++*/
@@ -128,21 +134,21 @@ TRAINING
 .youTubeVideoGazellesLink{
 	padding-left: 15px;
 	border-radius: 2px;
-	color: #76ff03;
+	color: white;
 }
 
 .youTubeVideoGazellesLink:hover{
-	color: white;
+	color: #76ff03;
 	cursor: pointer;
 }
 
 .youTubeVideoRunAtxLink{
 	padding-left: 15px;
-	color: #76ff03;
+	color: white;
 }
 
 .youTubeVideoRunAtxLink:hover{
-	color: white;
+	color: #76ff03;
 	cursor: pointer;
 }
 
@@ -158,6 +164,40 @@ TRAINING
 
 .exerciseDiv{
 	width: 100%;
+}
+
+.trainingPlanDisplay{
+	width: 80%;
+}
+
+.trainingPlanLink{
+	background-color: #2196f3;
+	color: white;
+	border-radius: 2px;
+	padding: 5px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+.trainingPlanLink:hover{
+	color: #76ff03;
+	background-color: #1976d2;
+	cursor: pointer;
+}
+
+.workoutLink{
+	background-color: #2196f3;
+	color: white;
+	border-radius: 2px;
+	padding: 5px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+.workoutLink:hover{
+	color: #76ff03;
+	background-color: #1976d2;
+	cursor: pointer;
 }
 
 /*+++++++++++++
