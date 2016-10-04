@@ -1,7 +1,5 @@
 
-#map{
-	height: 500px;
-}
+
 
 
 
@@ -82,6 +80,7 @@ ROUTES
 }
 
 #routeImage{
+	margin-top: 20px;
 	width: 70%;
 	border: 1px solid black;
 	max-height: 300px;
@@ -103,17 +102,47 @@ ROUTES
 	line-height: 1.5em;
 }
 
+#routeTitle{
+	margin-top: 40px;
+}
+
+#routeDescription{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#map{
+	height: 350px;
+	border: 1px solid black;
+	margin-bottom: 200px;
+	margin-top: 75px;
+}
+
 /*+++++++++++++
 TRAINING
 +++++++++++++*/
+
+.trainingDivider{
+	margin-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
 .trainingHeading{
 	margin-top: 30px;
 }
 
-#video{
-	margin-left: auto;
+#iframeDiv{
+	width: 80%;
 	margin-right: auto;
+	margin-left: auto;
+}
+
+#video{
+	/*margin-left: auto;
+	margin-right: auto;*/
+	margin-top: 10px;
+	/*width: 80%;*/
 }
 
 .coachArea{
@@ -122,8 +151,9 @@ TRAINING
 }
 
 .coachDiv{
-	margin-left: 12px;
-	margin-right: 12px;
+	width: 99%;
+	margin-left: auto;
+	margin-right: auto;
 	height: 315px;
 }
 
