@@ -93,7 +93,9 @@
     		<h5 class="center" id="routeTitle">The Ann & Roy Butler Hike and Bike Trail</h5>
     	</div>
       <div id="routeDescription">
-          <p>Some Text</p>
+          <p>The Butler Trail is a 10 mile hike and bike trail that meanders along the bank of Ladybird Lake in downtown Austin and is considered the crown jewel of our running routes.  Attracting more than 1.5 million visitors a year the trail is Austin's most popular recreational area.  In this city we pride ourselves on being weird and being active, and both attributes are on full display along the trail.  On a given run you are likely to see unicyclist, slack rope walkers, paddle boarders, dance walkers,   and acro yogis.  One of the great things about the Butler Trail is you never know what you will run across and there is always something new to discover.</p>
+
+          <p>The full trail is a 10 mile loop that follows Ladybird Lake between the Mopac Bridge and Longhorn Dam passing by many of Austin’s iconic landmarks along the way, but one of the best features of the trail is that the numerous bridges allow for a loop of almost any distance, and the multiple trailheads make the trail easily accessible from anywhere in the downtown area.</p>
       </div>
     </div>
   </div>
@@ -121,26 +123,47 @@
       center: {lat: 30.260739, lng: -97.743732},
       zoom: 14,
     });
-
+// +++++++++++
+// MARKERS
+// +++++++++++
     var marker = new google.maps.Marker({
       position: {lat: 30.245549, lng: -97.726523},
       map: map,
-      title: 'East Side Trailhead'
+      title: 'East Side Trailhead',
+      label: 'P'
     });
 
     var marker = new google.maps.Marker({
       position: {lat: 30.275000, lng: -97.769889},
       map: map,
-      title: 'Mopac Trailhead'
+      title: 'Mopac Trailhead',
+      label: 'P'
+    });
+    
+    var marker = new google.maps.Marker({
+      position: {lat: 30.252204, lng: -97.736844},
+      map: map,
+      title: 'I-35 Parking Area',
+      label: 'P'
+    });
+    
+    var marker = new google.maps.Marker({
+      position: {lat: 30.261934, lng: -97.748817},
+      map: map,
+      title: 'Butler Park Trailhead',
+      label: 'P'
+    });
+    var icon = '<img src="assets/images/bathroom.png>';
+    var marker = new google.maps.Marker({
+      position: {lat: 30.272813, lng: -97.772034},
+      map: map,
+      title: 'South Mopac Parking Lot',
+      label: 'P'
     });
 
+    
   }
 
-  // var marker = new google.maps.Marker({
-  //   position: {lat: 30.245549, lng: -97.726523},
-  //   map: map,
-  //   title: 'East Side Trailhead'
-  // });
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNofaC2cFgHC5tyn-Xmq56vge7A0v9Kgk&callback=initMap"
