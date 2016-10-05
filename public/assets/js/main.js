@@ -158,9 +158,10 @@ $(document).ready(function(){
       e.preventDefault();
       console.log('clicked');
       $('.planName').text('12 Week Half Marathon (Intermediate)')
-      var table = $('<table class="trainingTable"><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>');
+      var table = $('<table class="trainingTable"><th>Week</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>');
       for(i=0; i<12; i++){
-        var row = $('<tr><td>' + halfIntermediate[i].week[0] + '</td><td>' + halfIntermediate[i].week[1] + '</td><td>' + halfIntermediate[i].week[2] + '</td><td>' + halfIntermediate[i].week[3] + '</td><td>' + halfIntermediate[i].week[4] + '</td><td>' + halfIntermediate[i].week[5] + '</td><td>' + halfIntermediate[i].week[6] + '</td></tr>');
+      	var weekNumber = i + 1;
+        var row = $('<tr><td>' + weekNumber + '</td><td>' + halfIntermediate[i].week[0] + '</td><td>' + halfIntermediate[i].week[1] + '</td><td>' + halfIntermediate[i].week[2] + '</td><td>' + halfIntermediate[i].week[3] + '</td><td>' + halfIntermediate[i].week[4] + '</td><td>' + halfIntermediate[i].week[5] + '</td><td>' + halfIntermediate[i].week[6] + '</td></tr>');
         table.append(row);
       }
       $('#showThePlan').append(table);
