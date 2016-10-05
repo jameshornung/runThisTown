@@ -3,21 +3,21 @@ var fivekIntermediate = [
 	{week: ["Rest", "3 Mile Run", "30 Min Tempo", "3 Mile Run", "Rest", "3 Mile Fast", "5 Mile Run"]},
 	{week: ["Rest", "3 Mile Run", "6 x 400", "3 Mile Run", "Rest", "4 Mile Run", "6 Mile Run"]},
 	{week: ["Rest", "3 Mile Run", "35 Min Tempo", "3 Mile Run", "Rest", "Rest", "5-K Test"]},
-	{week: ["Rest", "3 Mile Run", "7 x 400", "3 Mile Run", "Rest" "4 Mile Fast", "6 Mile Run"]},
+	{week: ["Rest", "3 Mile Run", "7 x 400", "3 Mile Run", "Rest", "4 Mile Fast", "6 Mile Run"]},
 	{week: ["Rest", "3 Mile Run", "40 Min Tempo", "3 Mile Run", "Rest", "5 Mile Run", "7 Mile Run"]},
 	{week: ["Rest", "3 Mile Run", "8 x 400", "3 Mile Run", "Rest", "5 Mile Fast", "7 Mile Run"]},
 	{week: ["Rest", "3 Mile Run", "30 Min Tempo", "2 Mile Run", "Rest", "Rest", "5-K Race"]}
 ];
 
 var tenkIntermediate = [
-	{week: ["3 Mile Run",	"3 Mile Run",	"35 Min Tempo Run",	"3 Mile Run", "Rest", "60 Min Cross", "4 Mile Run",]},
-	{week: ["3 Mile Run",	3."5 Mile Run",	"8 x 400 5-K Pace",	"4 Mile Run", "Rest", "60 Min Cross", "5 Mile Run"]},
-	{week: ["3 Mile Run",	"4 Mile Run",	"40 Min Tempo Run",	"3 Mile Run", "Rest", "60 Min Cross", "6 Mile Run",]},
-	{week: ["3 Mile Run",	4."5 Mile Run",	"9 x 400 5-K Pace",	"4 Mile Run", "Rest", "Rest", "5-K Race"]},
-	{week: ["3 Mile Run",	"5 Mile Run",	"45 Min Tempo Run",	"3 Mile Run", "Rest", "60 Min Cross", "6 Mile Run",]},
-	{week: ["3 Mile Run",	5."5 Mile Run",	"10 x 400 5-K Pace", "4 Mile Run", "Rest", "60 Min Cross", "7 Mile Run",]},
-	{week: ["3 Mile Run",	"6 Mile Run",	"50 Min Tempo Run",	"4 Mile Run", "Rest", "60 Min Cross", "8 Mile Run",]},
-	{week: ["3 Mile Run", 	"3 Mile Run",	 "5 x 400 5-K Pace", "1-3 Mile Run", "Rest", "Rest", "10-K Race"]}
+	{week: ["3 Mile Run", "3 Mile Run",	"35 Min Tempo Run",	"3 Mile Run", "Rest", "60 Min Cross", "4 Mile Run",]},
+	{week: ["3 Mile Run", "3.5 Mile Run", "8 x 400 5-K Pace",	"4 Mile Run", "Rest", "60 Min Cross", "5 Mile Run"]},
+	{week: ["3 Mile Run", "4 Mile Run",	"40 Min Tempo Run",	"3 Mile Run", "Rest", "60 Min Cross", "6 Mile Run",]},
+	{week: ["3 Mile Run", "4.5 Mile Run", "9 x 400 5-K Pace",	"4 Mile Run", "Rest", "Rest", "5-K Race"]},
+	{week: ["3 Mile Run", "5 Mile Run",	"45 Min Tempo Run",	"3 Mile Run", "Rest", "60 Min Cross", "6 Mile Run",]},
+	{week: ["3 Mile Run", "5.5 Mile Run", "10 x 400 5-K Pace", "4 Mile Run", "Rest", "60 Min Cross", "7 Mile Run",]},
+	{week: ["3 Mile Run", "6 Mile Run",	"50 Min Tempo Run",	"4 Mile Run", "Rest", "60 Min Cross", "8 Mile Run",]},
+	{week: ["3 Mile Run",  "3 Mile Run", "5 x 400 5-K Pace", "1-3 Mile Run", "Rest", "Rest", "10-K Race"]}
 ];
 
 var halfNovice = [

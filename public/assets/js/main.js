@@ -153,9 +153,55 @@ $(document).ready(function(){
 
 // TRAINING PLANS================================================================
 
-// Half Marathon - Intermediate
-    $('#intermediateHalf').click(function(e){
+// 5K - Intermediate
+    $('#5kIntermediate').click(function(e){
       e.preventDefault();
+      $('#showThePlan').empty();
+      console.log('clicked');
+      $('.planName').text('8 Week Five K (Intermediate)')
+      var table = $('<table class="trainingTable"><th>Week</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>');
+      for(i=0; i<8; i++){
+        var weekNumber = i + 1;
+        var row = $('<tr><td>' + weekNumber + '</td><td>' + fivekIntermediate[i].week[0] + '</td><td>' + fivekIntermediate[i].week[1] + '</td><td>' + fivekIntermediate[i].week[2] + '</td><td>' + fivekIntermediate[i].week[3] + '</td><td>' + fivekIntermediate[i].week[4] + '</td><td>' + fivekIntermediate[i].week[5] + '</td><td>' + fivekIntermediate[i].week[6] + '</td></tr>');
+        table.append(row);
+      }
+      $('#showThePlan').append(table);
+    });
+
+    // 10K - Intermediate
+    $('#10kIntermediate').click(function(e){
+      e.preventDefault();
+      $('#showThePlan').empty();
+      console.log('clicked');
+      $('.planName').text('8 Week Ten K (Intermediate)')
+      var table = $('<table class="trainingTable"><th>Week</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>');
+      for(i=0; i<8; i++){
+        var weekNumber = i + 1;
+        var row = $('<tr><td>' + weekNumber + '</td><td>' + tenkIntermediate[i].week[0] + '</td><td>' + tenkIntermediate[i].week[1] + '</td><td>' + tenkIntermediate[i].week[2] + '</td><td>' + tenkIntermediate[i].week[3] + '</td><td>' + tenkIntermediate[i].week[4] + '</td><td>' + tenkIntermediate[i].week[5] + '</td><td>' + tenkIntermediate[i].week[6] + '</td></tr>');
+        table.append(row);
+      }
+      $('#showThePlan').append(table);
+    });
+
+// Half Marathon - Novice
+    $('#halfMarathonNovice').click(function(e){
+      e.preventDefault();
+      $('#showThePlan').empty();
+      console.log('clicked');
+      $('.planName').text('12 Week Half Marathon (Novice)')
+      var table = $('<table class="trainingTable"><th>Week</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>');
+      for(i=0; i<12; i++){
+      	var weekNumber = i + 1;
+        var row = $('<tr><td>' + weekNumber + '</td><td>' + halfNovice[i].week[0] + '</td><td>' + halfNovice[i].week[1] + '</td><td>' + halfNovice[i].week[2] + '</td><td>' + halfNovice[i].week[3] + '</td><td>' + halfNovice[i].week[4] + '</td><td>' + halfNovice[i].week[5] + '</td><td>' + halfNovice[i].week[6] + '</td></tr>');
+        table.append(row);
+      }
+      $('#showThePlan').append(table);
+    });
+
+// Half Marathon - Intermediate
+    $('#halfMarathonIntermediate').click(function(e){
+      e.preventDefault();
+      $('#showThePlan').empty();
       console.log('clicked');
       $('.planName').text('12 Week Half Marathon (Intermediate)')
       var table = $('<table class="trainingTable"><th>Week</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>');
@@ -167,7 +213,20 @@ $(document).ready(function(){
       $('#showThePlan').append(table);
     });
 
-
+// Marathon - Novice
+    $('#marathonNovice').click(function(e){
+      e.preventDefault();
+      $('#showThePlan').empty();
+      console.log('clicked');
+      $('.planName').text('Marathon (Novice)')
+      var table = $('<table class="trainingTable"><th>Week</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>');
+      for(i=0; i<18; i++){
+        var weekNumber = i + 1;
+        var row = $('<tr><td>' + weekNumber + '</td><td>' + marathonNovice[i].week[0] + '</td><td>' + marathonNovice[i].week[1] + '</td><td>' + marathonNovice[i].week[2] + '</td><td>' + marathonNovice[i].week[3] + '</td><td>' + marathonNovice[i].week[4] + '</td><td>' + marathonNovice[i].week[5] + '</td><td>' + marathonNovice[i].week[6] + '</td></tr>');
+        table.append(row);
+      }
+      $('#showThePlan').append(table);
+    });
 })
 
 
