@@ -286,6 +286,10 @@ TRAINING
 	.planPanel{
 		overflow-x: scroll;
 	}
+
+	.trainingDivider{
+		margin-top: 20px;
+	}
 }
 
 /*+++++++++++++
@@ -337,8 +341,10 @@ COMMUNITY
 	height: 350px;
 }
 
-#eventForm{
-	margin-left: 20px;
+#messageForm{
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 
@@ -379,10 +385,10 @@ Phone Settings
 	}
 
 	#messageBoardPost{
-		width: 80%;
+		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
-		float: left;
+		/*float: left;*/
 		height: 250px;
 	}
 }
