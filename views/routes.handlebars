@@ -36,9 +36,9 @@
         <p>Sign in here</p>
         <form action="/login" method="post">
             <label class="">Username:</label>
-            <input type="text" name="username"/><br/>
+            <input type="text" name="username" required="true"/><br/>
             <label>Password:</label>
-            <input type="password" name="password"/>
+            <input type="password" name="password" required="true"/>
             <input type="hidden" value="/routes" name="pathName">
             <input type="submit" value="Submit"/>
         </form>
@@ -48,9 +48,9 @@
         <p>Register Here</p>
         <form action="/register" method="post">
             <label class="">Username:</label>
-            <input type="text" name="username"/><br/>
+            <input type="text" name="username" required="true"/><br/>
             <label>Password:</label>
-            <input type="password" name="password"/>
+            <input type="password" name="password" required="true"/>
             <input type="hidden" value="/routes" name="pathName">
             <input type="submit" value="Submit"/>
         </form>

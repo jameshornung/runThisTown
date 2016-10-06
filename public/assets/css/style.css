@@ -1,8 +1,3 @@
-
-
-
-
-
 /*+++++++++++++
 NAVBAR
 +++++++++++++*/
@@ -40,6 +35,11 @@ Registration Modal
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.modal-footer{
+	border-top: 3px solid #c6ff00;
+	margin-bottom: 0px;
 }
 
 /*+++++++++++++
