@@ -180,10 +180,7 @@ TRAINING
 }
 
 #video{
-	/*margin-left: auto;
-	margin-right: auto;*/
 	margin-top: 10px;
-	/*width: 80%;*/
 }
 
 .coachArea{
@@ -284,6 +281,10 @@ TRAINING
 @media only screen and (max-width: 700px) {
 	#iframeDiv{
 		width: 95%;
+	}
+
+	.planPanel{
+		overflow-x: scroll;
 	}
 }
 
