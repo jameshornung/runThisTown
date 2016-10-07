@@ -140,10 +140,10 @@
     <div class="col s12" id="bulletinBoard">
       {{#each messagesForBoard }}
         <div id="messageBoardPost" class="card-panel blue">
-          <h5 class="messageBoardHeading white-text">{{ this.event }}</h5>
-          <p class="messageBoardDescription white-text">{{ this.description }}</p>
-          <p class="messageBoardDate white-text">{{ this.date }}</p>
-          <p class="messageBoardName white-text">Posted By: {{this.username}}</p>
+          <h5 class="messageBoardHeading white-text center">{{ this.event }}</h5>
+          <p class="messageBoardDescription light-green-text text-accent-3">{{ this.description }}</p>
+          <p class="messageBoardDate"> {{ this.date }}</p>
+          <p class="messageBoardName light-green-text text-accent-3">Posted By: {{this.username}}</p>
         </div>
       {{/each}}
     </div>
@@ -158,15 +158,15 @@
   <div class="col s12">
     <div id="messageForm">
       {{#if user}}
-        <h4>Post Event</h4>
+        <h4>Post Bulletin</h4>
         <form id="eventForm" action="/event" method="post">
             <label>Name of Event:</label>
-            <input type="text" name="event"/><br/>
+            <input type="text" name="event" required="true" maxlength="50" /><br/>
             <label>Date of Event:</label>
             <input type="date" name="date"/>
             <div class="input-field">
               <label>Description:</label>
-              <textarea class="materialize-textarea" name="description" length="250"></textarea> 
+              <textarea class="materialize-textarea" name="description" length="250" maxlength="250" required="true"></textarea> 
             </div>
             <input type="submit" value="Submit"/>
         </form>

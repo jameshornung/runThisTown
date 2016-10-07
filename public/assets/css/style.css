@@ -339,12 +339,17 @@ COMMUNITY
 	margin-right: 2%;
 	float: left;
 	height: 350px;
+	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 #messageForm{
-	width: 60%;
-	margin-right: auto;
-	margin-left: auto;
+	width: 40%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	padding: 15px;
+	margin-left: 50px;
+	border-radius: 3px;
 }
 
 
