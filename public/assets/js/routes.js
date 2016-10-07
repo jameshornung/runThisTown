@@ -1,7 +1,7 @@
 var butlerLoop = [
 {
 	image: '/assets/images/routes/morningBoardwalk.jpg',
-	title: 'The 10 Mile Loop',
+	title: 'The Butler Trail',
 	description: "<p>" + "The Butler Trail is a 10 mile hike and bike trail that meanders along the bank of Ladybird Lake in downtown Austin and is considered the crown jewel of our running routes. Attracting more than 1.5 million visitors a year the trail is Austin's most popular recreational area. In this city we pride ourselves on being weird and being active, and both attributes are on full display along the trail. On a given run you are likely to see unicyclist, slack rope walkers, paddle boarders, dance walkers, and acro yogis. One of the great things about the Butler Trail is you never know what you will run across and there is always something new to discover." + "</p><p>" + "The full trail is a 10 mile loop that follows Ladybird Lake between the Mopac Bridge and Longhorn Dam passing by many of Austin’s iconic landmarks along the way, but one of the best features of the trail is that the numerous bridges allow for a loop of almost any distance, and the multiple trailheads make the trail easily accessible from anywhere in the downtown area." + "</p>"
 },{
 	image: '/assets/images/routes/eastside.jpg',
@@ -16,15 +16,15 @@ var butlerLoop = [
 	title: 'Mopac to Pfluger Bridge',
 	description: "<p>" + "This is the most populated area of the trail, and provides some of the best opportunities for people watching.  A significant stretch of the route runs along the border of Zilker park and depending on the season provides unique running experiences.  In September you can hear the bands of the Austin City Limit musical festival, in December you can enjoy the Christmas spirit encapsulated at the trail of lights, and all year the vibrant spirit of the park and the city permeates this loop.  The Pfluger Bridge and Lou Neff Point provide picturesque views of downtown Austin." + "</p><p><strong>" + "Notable Route Features: " + "</strong>" + "Completion of the Pfuger Bridge in 2001 greatly increased the safety of the trail by getting runners and bikers away from the heavily trafficked Lamar Avenue.  There are numerous benches lining the pedestrian bridge and it is great place to sit and enjoy the views." + "</p><p><strong>" + "Insider Tips: " + "</strong>" + "Luke’s Locker is located just off the North side of the Pfluger bridge and is easily accessible from the trail.  They always have an igloo full of ice cold water and a store full of anything your running heart might desire.  Ready to call it a day?  Whole Foods is a quarter mile up Lamar and has a rooftop patio that is the ideal place to open a post run bottle of wine." + "</p>"
 },{
-	image: '/assets/images/routes/',
+	image: '/assets/images/routes/louNeff.jpg',
 	title: 'Mopac to 1st',
-	description: "<p>" + "" + "</p><p><strong>" + "Notable Route Features: " + "</strong>" + "" + "</p><p><strong>" + "Insider Tips: " + "</strong>" + "" + "</p>"
+	description: "<p>" + "" + "</p><p><strong>" + "Notable Route Features: " + "</strong>" + "This route takes you by one of the most photographed landmarks of Austin, the life size statute of music legend Stevie Ray Vaughan.  The bronze statute was unveiled in 1993 and was placed on this area of the trail, once called Auditorium Shores, because Stevie Ray played many concerts there.  Now renamed Vic Matthias Shores, this park is still the site of live music and festivals such as the Food and Wine Festival and the Reggae Festival all set to a backdrop of the Austin skyline." + "</p><p><strong>" + "Insider Tips: " + "</strong>" + "" + "</p>"
 },{
-	image: '/assets/images/routes/',
+	image: '/assets/images/routes/batBridge.jpg',
 	title: 'Mopac to Congress',
 	description: "<p>" + "" + "</p><p><strong>" + "Notable Route Features: " + "</strong>" + "" + "</p><p><strong>" + "Insider Tips: " + "</strong>" + "" + "</p>"
 },{
-	image: '/assets/images/routes/',
+	image: '/assets/images/routes/skylineThroughTree.jpg',
 	title: 'Mopac to I-35',
 	description: "<p>" + "" + "</p><p><strong>" + "Notable Route Features: " + "</strong>" + "" + "</p><p><strong>" + "Insider Tips: " + "</strong>" + "" + "</p>"
 }
