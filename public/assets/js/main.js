@@ -17,6 +17,7 @@ $(document).ready(function(){
 		console.log(x);
 		$('#routeImage').attr('src', butlerLoop[x].image);
 		$('#routeTitle').text(butlerLoop[x].title);
+		$('#routeMap').attr('href', butlerLoop[x].link);
 		$('#routeDescription').html(butlerLoop[x].description);
 	})
 //=============
