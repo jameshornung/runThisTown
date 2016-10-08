@@ -226,7 +226,6 @@ TRAINING
 
 .countdownTimer{
 	width: 25%;
-	/*line-height: 75px;*/
 	font-size: 35px;
 }
 
@@ -250,6 +249,20 @@ TRAINING
 .trainingPlanLink:hover{
 	color: #76ff03;
 	background-color: #1976d2;
+	cursor: pointer;
+}
+
+.inactiveLink{
+	border-radius: 2px;
+	padding: 5px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	background-color: #757575;
+}
+
+.inactiveLink:hover{
+	color: white;
+	background-color: #212121;
 	cursor: pointer;
 }
 
@@ -291,6 +304,23 @@ TRAINING
 		margin-top: 20px;
 	}
 }
+
+/*+++++++++++++
+ROUTES
++++++++++++++*/
+
+#raceHeading{
+	margin-top: 40px;
+}
+
+#headingDiv{
+	margin-bottom: 0px;
+}
+
+
+
+
+
 
 /*+++++++++++++
 COMMUNITY
