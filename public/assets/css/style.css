@@ -45,14 +45,27 @@ Registration Modal
 /*+++++++++++++
 MAIN PAGE
 +++++++++++++*/
-.banner{
-	height: 400px;
-	padding: 15px;
-	background-image: url('../images/jimmiesSkylineBanner2.jpg');
+#mainPage{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-image: url('../images/background.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+
+
+/*.banner{
+	min-height: 800px;
+	max-height: 1200px;
+	padding: 15px;
+	background-image: url('../images/jimmiesSkylineFull.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}*/
 
 .mainPageIntro{
 	font-size: 18px;
