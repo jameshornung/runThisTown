@@ -134,10 +134,16 @@
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
 <div class="messageBoard">
+  <div class="col s12">
+    <div class="trainingDivider">
+      <h4>Community Bulletin Board</h4>
+      <p class="light">This is your opportunity to connect with the running community.  Looking for a running buddy? Hosting a group run? Need to plug a race?  This is the spot for you, use this bulletin board to post fliers advertising your own event.</p>
+      <hr>
+    </div>
+  </div>
+
   <div class="row">
-  <h4 class="center">Community Bulletin Board</h4>
-  <p class="center light">This is your opportunity to connect with the running community.  Looking for a running buddy? Hosting a group run? Need to plug a race?  This is the spot for you, use this bulletin board to post fliers advertising your own event.</p>  
-    <div class="col s12" id="bulletinBoard">
+      <div class="col s12" id="bulletinBoard">
       {{#each messagesForBoard }}
         <div id="messageBoardPost" class="card-panel blue">
           <h5 class="messageBoardHeading white-text center">{{ this.event }}</h5>
@@ -171,7 +177,7 @@
             <input type="submit" value="Submit"/>
         </form>
         {{^}}
-          <p>Please <a class="modal-trigger" href="#modal1">login</a> to post on the message board</p>
+          <p>Please <a class="modal-trigger" href="#modal1">sign in</a> to post on the message board</p>
       {{/if}}
     </div>
   </div>

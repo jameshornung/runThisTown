@@ -68,6 +68,7 @@ MAIN PAGE
 	text-shadow: 2px 1px black;
 }
 
+
 iframe{
 	width: 100%;
 }
@@ -317,11 +318,6 @@ ROUTES
 	margin-bottom: 0px;
 }
 
-
-
-
-
-
 /*+++++++++++++
 COMMUNITY
 +++++++++++++*/
@@ -358,7 +354,7 @@ COMMUNITY
 }
 
 .messageBoard{
-	width: 90%;
+	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
 }
