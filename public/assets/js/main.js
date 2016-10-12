@@ -12,7 +12,7 @@ $(document).ready(function(){
 //=============
 
 
-	$('.butlerDropdowns').click(function(){
+	$('.routeLink').click(function(){
 		var x = this.value;
 		console.log(x);
 		$('#routeImage').attr('src', butlerLoop[x].image);

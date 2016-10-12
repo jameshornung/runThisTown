@@ -49,36 +49,21 @@ MAIN PAGE
 	position: fixed;
 	height: 100%;
 	width: 100%;
-	background-image: url('../images/background.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-
-
-/*.banner{
-	min-height: 800px;
-	max-height: 1200px;
-	padding: 15px;
 	background-image: url('../images/jimmiesSkylineFull.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-}*/
+}
 
 .mainPageIntro{
 	font-size: 18px;
-	padding-right: 10px;
-	padding-left: 10px;
-}
-
-.mainContent{
-	margin-top: 30px;
+	text-shadow: 1px 1px black;
 }
 
 .title{
+	font-family: 'Ultra', serif;
 	text-shadow: 2px 1px black;
+	margin-top: 200px;
 }
 
 
@@ -90,10 +75,6 @@ iframe{
 Phone Settings
 +++++++++++++*/
 @media only screen and (max-width: 700px) {
-
-     .banner{
-		height: 600px;
-	}
 
 	#messageBoardPost{
 		width: 80%;
@@ -132,6 +113,21 @@ ROUTES
 	padding-left: 7px;
 	padding-right: 7px;
 	line-height: 1.5em;
+}
+
+.routeLink{
+	background-color: #2196f3;
+	color: white;
+	border-radius: 2px;
+	padding: 5px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+.routeLink:hover{
+	color: #76ff03;
+	background-color: #1976d2;
+	cursor: pointer;
 }
 
 #routeTitle{
@@ -178,7 +174,7 @@ TRAINING
 }
 
 .trainingHeading{
-	margin-top: 30px;
+	/*margin-top: 30px;*/
 }
 
 .trainingContainer{
@@ -199,7 +195,7 @@ TRAINING
 
 .coachArea{
 	padding-left: 10px;
-	margin-top: 30px;
+	/*margin-top: 30px;*/
 }
 
 .coachDiv{
